@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gerenciador de Tarefas</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+
+	<section>
+
+
+		<form action="tarefa/salvar" th:object="${Tarefa}" method="post">
+			<h2>Nova Tarefa</h2>
+			<div>
+				<label>Tarefa</label> <input type="text" name="nome"
+					th:field="*{nome}">
+			</div>
+
+			<div>
+				<label>Descrição</label> <input type="text" name="descricao"
+					th:field="*{descricao}">
+			</div>
+
+			<button type="submit">Salvar</button>
+
+		</form>
+
+		<main>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Tarefa</th>
+						<th>Descrição</th>
+						<th>Concluída</th>
+						<th>Em Desenvolvimento</th>
+						<th>Não Iniciada</th>
+						<th>Ação</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="tarefa : ${tarefas}">
+						<td th:text="${tarefa.nome}"></td>
+						<td th:text="${tarefa.descricao}"></td>
+						<td><input type="checkbox"></td>
+						<td><input type="checkbox"></td>
+						<td><input type="checkbox"></td>
+
+						<td><a th:href="@{/tarefa/excluir/{id}(id=${tarefa.id})}">
+								Excluir </a></td>
+					</tr>
+				</tbody>
+		</main>
+
+	</section>
+
+
+</body>
+</html>
