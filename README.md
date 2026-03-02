@@ -42,10 +42,9 @@ Este projeto foi desenvolvido com o objetivo de praticar:
 	
 ## 🎨 Layout
 
-![Mobile1](https://github.com/MatheusAlvarez/ChatBot-Digitalk/blob/master/assets/mobile01.png)<br>
+![Mobile1](Thumbnail-crud.png)<br><br>
 
-
-## ▶️ Como Executar o Projeto
+## ▶️ Como Executar o Projeto<br>
 
 ### 1️⃣ Clonar o repositório
 
@@ -99,3 +98,45 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 Se você não estiver utilizando uma IDE que já possua suporte ao Maven integrado (como o Eclipse), será necessário instalar o:
 
 - 🛠 [Apache Maven](https://maven.apache.org/download.cgi)
+
+
+## 🛠 Tecnologias
+
+- Java 17  
+- Spring MVC
+- MySQL  
+- Thymeleaf  
+- HTML & CSS  
+- Maven  
+- Eclipse  
+- Git & GitHub  
+
+
+## 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
+---
+
+## 🦸 Autor
+
+<a href="https://br.linkedin.com/in/Joao-vitorSantos08">
+João Vitor Santos souza</a>
+ <br />
+ 
+
+
+---
+
+
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito por João Vitor Santos Souza👋🏽
+
